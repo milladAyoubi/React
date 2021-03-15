@@ -1,7 +1,12 @@
-@media (prefers-reduced-motion: no-preference) {
-    .link {
-        animation: link infinite 20s linear;
-    }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .App {
@@ -17,21 +22,28 @@
 
 .link {
     color: #f12c9f;
+    background: linear-gradient(0.30turn, #2024fa, #7411e6);
+    border-radius: 20px;
+    padding: 6px;
     text-decoration: none;
+}
+
+.container {
+    text-align: center;
 }
 
 .linkApp {
     animation-name: spin;
-    animation-duration: 6000ms;
+    animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes spin {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg)
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(360deg)
     }
 }
